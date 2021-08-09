@@ -22,6 +22,7 @@ if [[ $DOWNLOADED_CHECKSUM != "$KTLINT_CHECKSUM" ]]; then
    exit 1
 fi
 
+chmod +x ktlint
 mv ktlint /usr/local/bin/
 
 # Reviewdog
@@ -38,4 +39,5 @@ if [[ $DOWNLOADED_CHECKSUM != "$REVIEWDOG_CHECKSUM" ]]; then
 fi
 
 tar --no-same-owner -xzf "$REVIEWDOG_INSTALL_FILE" reviewdog
+chmod +x reviewdog
 mv reviewdog /usr/local/bin/
