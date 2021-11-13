@@ -8,7 +8,7 @@ REVIEWDOG_VERSION=0.13.0
 REVIEWDOG_CHECKSUM=2993478234218448d66fa34c275f8821fbdf99d8d63b7fa6ff3e6352f9e85df2
 
 
-yum update
+yum update -y
 yum install -y tar gzip git
 TMPDIR=${TMPDIR:-/tmp}
 
