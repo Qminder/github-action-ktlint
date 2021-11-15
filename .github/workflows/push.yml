@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build Image
 
 on: [push]
 
@@ -9,4 +9,4 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@master
       - name: Build the Docker image
-        run: docker build .
+        run: docker build src/
