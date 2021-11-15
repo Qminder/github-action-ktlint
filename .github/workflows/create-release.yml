@@ -30,6 +30,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           workdir: src
+          tags: ${{ github.event.inputs.versionName }}
 
       - name: Update Dockerfile Digest
         run: |
