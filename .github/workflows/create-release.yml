@@ -24,7 +24,7 @@ jobs:
 
       - name: Build & Publish to Registry
         id: build-and-publish
-        uses: elgohr/Publish-Docker-Github-Action@40bf560936a8022e68a3c00e7d2abefaf01305a6
+        uses: elgohr/Publish-Docker-Github-Action@191af57e15535d28b83589e3b5f0c31e76aa8733
         with:
           name: qminder/github-action-ktlint
           username: ${{ secrets.DOCKER_USERNAME }}
