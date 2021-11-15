@@ -34,7 +34,7 @@ jobs:
 
       - name: Update Dockerfile Digest
         run: |
-          echo "FROM qminder/github-action-ktlint@sha256:${{ steps.build-and-publish.outputs.digest }}" > Dockerfile
+          echo "FROM ${{ steps.build-and-publish.outputs.digest }}" > Dockerfile
 
       - name: Commit Dockerfile
         id: make-commit
