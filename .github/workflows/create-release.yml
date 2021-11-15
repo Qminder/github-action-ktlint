@@ -50,7 +50,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           head: release/v${{ github.event.inputs.versionName }}
-          base: main
+          base: master
           title: Relese v${{ github.event.inputs.versionName }}
           reviewers: ${{ github.event.issue.user.login }}
           body: |
