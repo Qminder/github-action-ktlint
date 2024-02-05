@@ -1,1 +1,1 @@
-FROM qminder/github-action-ktlint@sha256:704e49de26699705437eb066a89f0dda76c90bded8f36dad74280f74e42150f9
+FROM qminder/github-action-ktlint@sha256:a4dbbd5bf5f4a0047a2feace60a2be567b297e3c3610c815dc20a9859ad61bbf
