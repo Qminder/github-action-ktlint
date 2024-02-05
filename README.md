@@ -17,7 +17,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@master
       - name: ktlint
-        uses: Qminder/github-action-ktlint@772384868af92c907c5d3a5747cc10f46101c4de
+        uses: Qminder/github-action-ktlint@a49ec7642814f107db2ed70fd0911fc9af0079f5
         with:
           github_token: ${{ secrets.github_token }}
 ```
